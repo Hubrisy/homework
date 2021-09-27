@@ -16,8 +16,8 @@ const takePairedNum = confirm('should skip paired numbers?');
 console.log(takePairedNum);
 
 sumOfNum = 0;
-let N = i;
-let M = j;
+let i = N;
+let j = M;
 for(i; i<=j; i++){
   if(takePairedNum === true){
       if(i % 2 !== 0){
