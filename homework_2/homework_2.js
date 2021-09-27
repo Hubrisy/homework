@@ -16,12 +16,14 @@ const takePairedNum = confirm('should skip paired numbers?');
 console.log(takePairedNum);
 
 sumOfNum = 0;
-for(N; N<=M; N++){
+let N = i;
+let M = j;
+for(i; i<=j; i++){
   if(takePairedNum === true){
-      if(N%2 !==0){
-        sumOfNum += N;
+      if(i % 2 !== 0){
+        sumOfNum += i;
       }
   }else{
-      sumOfNum +=N;
+      sumOfNum +=i;
   }
 } console.log(sumOfNum);
