@@ -1,29 +1,24 @@
-let N = +prompt("choose your first INTEGER number",0);
-if(Number.isInteger(N) === true){
-    console.log(N)
-}else{
-    alert("choose other number");
-};
+let N;
+let M;
+do{
+    N = +prompt("choose your first INTEGER number", 0);
+}while(Number.isInteger(N) !== true);
+console.log(N);
 
-let M = +prompt("choose your second INTEGER number",0);
-if(Number.isInteger(M) === true){
-    console.log(M)
-}else{
-    alert("choose other number");
-};
+do{
+    M = +prompt("choose your second INTEGER number", 0);
+}while(Number.isInteger(M) !== true);
+console.log(M);
 
-const takePairedNum = confirm('should skip paired numbers?');
+const takePairedNum = confirm('should i skip paired numbers?');
 console.log(takePairedNum);
 
-sumOfNum = 0;
-let i = N;
-let j = M;
-for(i; i<=j; i++){
-  if(takePairedNum === true){
-      if(i % 2 !== 0){
+let sumOfNum = 0;
+
+for (let i = N; i <= M; i++) {
+    if (takePairedNum && i % 2 !== 0) {
         sumOfNum += i;
-      }
-  }else{
-      sumOfNum +=i;
-  }
+    } else {
+        sumOfNum += i;
+    }
 } console.log(sumOfNum);
