@@ -2,12 +2,12 @@ let N;
 let M;
 do{
     N = +prompt("choose your first INTEGER number", 0);
-}while(Number.isInteger(N) !== true);
+}while(Number.isInteger(N) === false);
 console.log(N);
 
 do{
     M = +prompt("choose your second INTEGER number", 0);
-}while(Number.isInteger(M) !== true);
+}while(Number.isInteger(M) === false);
 console.log(M);
 
 const takePairedNum = confirm('should i skip paired numbers?');
