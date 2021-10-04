@@ -54,4 +54,3 @@ document.writeln(`Обменник: ${exchanger(270)}<br>
 Большая буква: ${nameToUpper("vlad")}<br>
 Сумма с налогом: ${Math.round(sum(1000))}<br>
 Случайное число: ${Math.floor(getRandomNum(1,10))}`)
-
