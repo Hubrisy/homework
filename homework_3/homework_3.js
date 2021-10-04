@@ -32,7 +32,7 @@ const sum = function(x){
 
 // task 5
 function getRandomNum(x,y){
-    return x + Math.random() * (y - 1);
+    return x + Math.random() * (y - x);
 }
 //console.log(Math.floor(getRandomNum(1,10)));
 
