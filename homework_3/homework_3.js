@@ -38,7 +38,7 @@ function getRandomNum(x,y){
 
 //task 7
 const exchanger = function(num){
-    const ask = prompt ("what currency do you want to convert?");
+    const ask = prompt ("what currency do you want to convert? ($/UAH)");
     if(ask === "$"){
         return num / 27;
     }else if(ask === "UAH"){
