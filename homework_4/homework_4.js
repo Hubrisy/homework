@@ -32,16 +32,11 @@ console.log(projectThemes(studentPairs,themes));
 const themesOfPairs = projectThemes(studentPairs,themes);
 
 const personalMarks = function(){
-    const firstMark = [students[0],marks[0]];
-    const secondMark = [students[1],marks[1]];
-    const thirdMark = [students[2],marks[2]];
-    const fourthMark = [students[3],marks[3]];
-    const fivethMark = [students[4],marks[4]];
-    const sixthMark = [students[5],marks[5]];
-
-    const studentsMarks = [firstMark,secondMark,thirdMark,fourthMark,fivethMark,sixthMark];
-    return studentsMarks;
-}
+    const studentsMarks = [];
+    for(let i = 0;i < students.length;i++){
+        studentsMarks.push([students[i],marks[i]]);
+    }return studentsMarks;
+};
 console.log(personalMarks());
 
 const getRandomNum = function(x = 5){
