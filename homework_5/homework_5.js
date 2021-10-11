@@ -3,6 +3,8 @@ function filterRandomNum(...numbers){
     let result = numbers.filter(function(num){
         if(num % 2 !== 0){
             return true;
+        }else{
+            return false;
         }
     })
     return result;
