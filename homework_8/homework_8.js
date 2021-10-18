@@ -43,4 +43,4 @@ function getInfo(){
     console.log(profit);
 }
 //getInfo.call(ukraine);
-setInterval(() => getInfo.call(ukraine),5000);
+setInterval(() => getInfo.call(ukraine),10000);
