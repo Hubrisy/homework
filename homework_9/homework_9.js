@@ -20,7 +20,7 @@ class Student {
     }
 
     getAverageMark(){
-        return this.marks.reduce((mark,sum) => mark + sum)/this.marks.length;
+        return this.marks.reduce((sum,mark) => sum + mark)/this.marks.length;
     }
 
     dismiss(){
@@ -31,7 +31,7 @@ class Student {
     
    recover(){
         if(this.exclude == false){
-            return "возобновить обучение"
+            return "Возобновить обучение"
         }
     }
 };
@@ -46,7 +46,7 @@ class BudgetStudent extends Student {
         if(this.exclude == false && this.getAverageMark() > 4){
             console.log("Вы получили 1500 грн стипендии")
         }else{
-            console.log("подтяните средний бал")
+            console.log("Подтяните средний бал")
         }
     }
 };
