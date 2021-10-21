@@ -58,4 +58,5 @@ Vladimir.setMarks = 5;
 console.log(Vladimir.getMarks);
 console.log(Vladimir.getAverageMark());
 Vladimir.dismiss();
+let Vlad = new BudgetStudent("ХНУРЕ", 4, "Потапенко Владислав")
 
