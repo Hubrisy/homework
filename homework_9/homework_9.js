@@ -4,35 +4,39 @@ class Student {
         this.course = course;
         this.fullName = fullName;
         this.marks = [5,4,4,5];
-        this.exclude = false;
+        this.exclude == false;
     }
 
     getInfo(){
-        return(`Студент ${this.course} курсу ${this.university} ${this.fullName}`)
+        if(this.exclude == false){
+            return(`Студент ${this.course} курсу ${this.university} ${this.fullName}`)
+        }
     }
 
-    get getMarks(){
-        return this.marks;
+    get theMarks(){
+        if(this.exclude == false){
+            return this.marks
+        }
     }
 
-    set setMarks(num){
-        return this.marks.push(num);
+    set theMarks(num){
+        if(this.exclude == false){
+            return this.marks.push(num)
+        }
     }
 
     getAverageMark(){
-        return this.marks.reduce((sum,mark) => sum + mark)/this.marks.length;
-    }
-
-    dismiss(){
-        if(this.exclude == true){
-            return "Исключить студента"
-        }
-    };
-    
-   recover(){
         if(this.exclude == false){
-            return "Возобновить обучение"
+        return this.marks.reduce((sum,mark) => sum + mark)/this.marks.length;
         }
+    }
+    dismiss(){
+        this.exclude == true;
+        return "отчислить студента"
+    }
+    recover(){
+        this.exclude;
+        return "возобновить обучение"
     }
 };
 
@@ -43,7 +47,7 @@ class BudgetStudent extends Student {
     }
     
     getScholarShip(){
-        if(this.exclude == false && this.getAverageMark() > 4){
+        if(this.exclude == false && this.getAverageMark() >= 4){
             console.log("Вы получили 1500 грн стипендии")
         }else{
             console.log("Подтяните средний бал")
@@ -53,9 +57,9 @@ class BudgetStudent extends Student {
 
 let Vladimir = new Student("НТУ ХПИ", 4, "Шпитальный Владимир");
 console.log(Vladimir.getInfo());
-console.log(Vladimir.getMarks);
-Vladimir.setMarks = 5;
-console.log(Vladimir.getMarks);
+console.log(Vladimir.theMarks);
+Vladimir.theMarks = 5;
+console.log(Vladimir.theMarks);
 console.log(Vladimir.getAverageMark());
 Vladimir.dismiss();
 let Vlad = new BudgetStudent("ХНУРЕ", 4, "Потапенко Владислав")
