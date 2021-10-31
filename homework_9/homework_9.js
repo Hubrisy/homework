@@ -4,39 +4,37 @@ class Student {
         this.course = course;
         this.fullName = fullName;
         this.marks = [5,4,4,5];
-        this.exclude == false;
+        this.exclude === true;
     }
 
     getInfo(){
-        if(this.exclude == false){
+        if(!this.exclude){
             return(`Студент ${this.course} курсу ${this.university} ${this.fullName}`)
         }
     }
 
     get theMarks(){
-        if(this.exclude == false){
+        if(!this.exclude){
             return this.marks
         }
     }
 
     set theMarks(num){
-        if(this.exclude == false){
+        if(!this.exclude){
             return this.marks.push(num)
         }
     }
 
     getAverageMark(){
-        if(this.exclude == false){
+        if(!this.exclude){
         return this.marks.reduce((sum,mark) => sum + mark)/this.marks.length;
         }
     }
     dismiss(){
-        this.exclude == true;
-        return "отчислить студента"
+        this.exclude === true;
     }
     recover(){
-        this.exclude;
-        return "возобновить обучение"
+        this.exclude === false;
     }
 };
 
@@ -47,7 +45,7 @@ class BudgetStudent extends Student {
     }
     
     getScholarShip(){
-        if(this.exclude == false && this.getAverageMark() >= 4){
+        if(!this.exclude && this.getAverageMark() >= 4){
             console.log("Вы получили 1500 грн стипендии")
         }else{
             console.log("Подтяните средний бал")
