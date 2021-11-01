@@ -1,5 +1,5 @@
 body{
-    background-image:url(https://eskipaper.com/images/piano-3.jpg);
+    background-image:url(https://p4.wallpaperbetter.com/wallpaper/1012/821/144/pianos-keys-musical-instrument-wallpaper-preview.jpg);
     background-size: 100%;
 }
 .sheets{
@@ -7,11 +7,15 @@ body{
     text-align: center;
     margin-top: 20%; 
 }
-.sheets .sound{
+.sheets .key{
     height: 100px;
     width: 100px;
     border: 1px solid rgb(48, 4, 4);
     margin: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
+}
+kbd {
+	display: block;
+	font-size: 20px;
 }
