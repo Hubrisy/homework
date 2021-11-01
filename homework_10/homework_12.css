@@ -1,0 +1,17 @@
+body{
+    background-image:url(https://eskipaper.com/images/piano-3.jpg);
+    background-size: 100%;
+}
+.sheets{
+    display: block;
+    text-align: center;
+    margin-top: 20%; 
+}
+.sheets .sound{
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgb(48, 4, 4);
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
