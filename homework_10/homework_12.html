@@ -9,24 +9,24 @@
 </head>
 <body>
     <div class = "sheets">
-        <button id = "DO" class = "key"><kbd>1</kbd>До</button>
-        <button id = "RE" class = "key"><kbd>2</kbd>Ре</button>
-        <button id = "MI" class = "key"><kbd>3</kbd>Ми</button>
-        <button id = "FA" class = "key"><kbd>4</kbd>Фа</button>
-        <button id = "SOL" class = "key"><kbd>5</kbd>Соль</button>
-        <button id = "LA" class = "key"><kbd>6</kbd>Ля</button>
-        <button id = "SI" class = "key"><kbd>7</kbd>Си</button>
-        <button id = "highDO" class = "key"><kbd>8</kbd>До</button>
+        <div data-key = "49" id = "keys1" class = "key"><kbd>1</kbd><span>До</span></div>
+        <div data-key = "50" id = "keys2" class = "key"><kbd>2</kbd><span>Ре</span></div>
+        <div data-key = "51" id = "keys3" class = "key"><kbd>3</kbd><span>Ми</span></div>
+        <div data-key = "52" id = "keys4" class = "key"><kbd>4</kbd><span>Фа</span></div>
+        <div data-key = "53" class = "key"><kbd>5</kbd><span>Соль</span></div>
+        <div data-key = "54" class = "key"><kbd>6</kbd><span>Ля</span></div>
+        <div data-key = "55" class = "key"><kbd>7</kbd><span>Си</span></div>
+        <div data-key = "56" class = "key"><kbd>8</kbd><span>до</span></div>
     </div>
     <div class = "music">
-        <audio src="music/zvuk-notyi-do.mp3" id = "sound1"></audio>
-        <audio src="music/zvuk-notyi-re.mp3" id = "sound2"></audio>
-        <audio src="music//zvuk-notyi-mi.mp3" id = "sound3"></audio>
-        <audio src="music/zvuk-notyi-fa.mp3" id = "sound4"></audio>
-        <audio src="music//zvuk-notyi-sol.mp3" id = "sound5"></audio>
-        <audio src="music//zvuk-notyi-lya.mp3" id = "sound6"></audio>
-        <audio src="music/zvuk-notyi-si.mp3" id = "sound7"></audio>
-        <audio src="music/zvuk-notyi-do-vo-vtoroy-oktave.mp3" id = "sound8"></audio>
+        <audio data-key = "49" id = "lul" src="music/zvuk-notyi-do.mp3" id = "sound1"></audio>
+        <audio data-key = "50" src="music/zvuk-notyi-re.mp3" id = "sound2"></audio>
+        <audio data-key = "51" src="music//zvuk-notyi-mi.mp3" id = "sound3"></audio>
+        <audio data-key = "52" src="music/zvuk-notyi-fa.mp3" id = "sound4"></audio>
+        <audio data-key = "53" src="music//zvuk-notyi-sol.mp3" id = "sound5"></audio>
+        <audio data-key = "54" src="music//zvuk-notyi-lya.mp3" id = "sound6"></audio>
+        <audio data-key = "55" src="music/zvuk-notyi-si.mp3" id = "sound7"></audio>
+        <audio data-key = "56" src="music/zvuk-notyi-do-vo-vtoroy-oktave.mp3" id = "sound8"></audio>
     </div>
     <script src = "homework_12.js"></script>
 </body>

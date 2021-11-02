@@ -3,19 +3,17 @@ body{
     background-size: 100%;
 }
 .sheets{
-    display: block;
-    text-align: center;
-    margin-top: 20%; 
-}
-.sheets .key{
-    height: 100px;
-    width: 100px;
-    border: 1px solid rgb(48, 4, 4);
-    margin: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
     font-size: large;
+    margin-top: 250px;
 }
-kbd {
-	display: block;
-	font-size: 20px;
+.key{
+    border: 3px solid black;
+    margin: 25px;
+    padding: 25px;
+    font-style: italic;
+}
+kbd{
+    display: block;
 }
