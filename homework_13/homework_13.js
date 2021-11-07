@@ -20,9 +20,13 @@ async function getRandomChinese(length){
     let i = 0;
     let result = '';
     while(i < length){
-        result += String.fromCharCode(Date.now().toString().slice(-5));;
-        await new Promise((resolve) => setTimeout(resolve,50*length));
-        i++;
+        await new Promise((resolve) => {
+            result += String.fromCharCode(Date.now().toString().slice(-5));
+            i++;
+            setTimeout(() =>{
+                resolve(result);
+            }, 50 * length);
+        })
     }
     console.log(result);
 }
