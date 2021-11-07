@@ -6,3 +6,10 @@ window.addEventListener('keypress', function Player(e){
   audio.currentTime = 0;
   audio.play();
 })
+
+function playSound(){
+  let music = document.querySelectorAll("audio");
+  music.play();
+}
+let sound = document.getElementById("keys1");
+sound.addEventListener('click',playSound);
