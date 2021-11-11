@@ -1,9 +1,9 @@
 
 const newElem = document.getElementById('square');
-newElem.style.width = '250px';
-newElem.style.height = '250px';
+newElem.style.width = '1000px';
+newElem.style.height = '1000px';
 newElem.style.display = 'grid';
-newElem.style.gridTemplateColumns = 'repeat(5, 50px)';
+newElem.style.gridTemplateColumns = 'repeat(5, 300px)';
 
 function generateBlocks(){
     for(let i = 0;i < 25;i++){
