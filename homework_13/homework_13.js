@@ -33,4 +33,3 @@ async function getRandomChinese(length){
 
 getRandomChinese(4);
 
-document.style.background("https://static.wikia.nocookie.net/naruto/images/0/0d/Tobi.PNG/revision/latest?cb=20200330170803&path-prefix=ru")
