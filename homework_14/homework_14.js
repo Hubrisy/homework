@@ -5,6 +5,7 @@ let list = document.getElementById('list');
 let planetsBtn = document.getElementById('planets');
 let nextBtn = document.getElementById('next');
 let prevBtn = document.getElementById('prev');
+let musicOn = document.getElementById('music');
 
 let currentPage = 1;
 
@@ -44,6 +45,11 @@ function getPlanets(){
     })
 }
 
+function soundOn(){
+    let musicOn = document.getElementById('sound');
+    musicOn.play();
+}
+
 btn.addEventListener('click', getCharacters);
 planetsBtn.addEventListener('click', getPlanets);
 nextBtn.onclick = () =>{
@@ -64,3 +70,4 @@ prevBtn.onclick = () =>{
         getPlanets();
     }
 }
+musicOn.addEventListener('click', soundOn)
